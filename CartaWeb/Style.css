@@ -1,0 +1,12 @@
+
+.Facha{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vw;   /* 80% del ancho de la pantalla */
+    height: 50vh;  /* 50% de la altura de la pantalla */
+    border: 5px solid black; /* Borde negro */
+    transform: translate(-50%, -50%); /* Centra el borde en el centro exacto de la pantalla */
+    
+  
+}
