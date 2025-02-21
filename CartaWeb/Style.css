@@ -1,12 +1,255 @@
-
-.Facha{
+ button:hover{
+    transition: box-shadow 0.20s ease;
+    margin: 0.33rem 0;
+    border-radius: 30px;
+    padding: 0.25rem 0;
+    box-shadow: 0 0.1rem 1.4rem  rgb(220, 110,184);
+}
+.Corazon{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80vw;   /* 80% del ancho de la pantalla */
-    height: 50vh;  /* 50% de la altura de la pantalla */
-    border: 5px solid black; /* Borde negro */
-    transform: translate(-50%, -50%); /* Centra el borde en el centro exacto de la pantalla */
-    
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: latir 8s infinite ease-in-out;
+}
+.Corazon::before,
+.Corazon::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+.Corazon::before {
+    top: -50px;
+    left: 0;
+}
+
+.Corazon::after {
+    left: 50px;
+    top: 0;
+}
+@keyframes latir{
   
+    50% {
+        transform: rotate(-45deg) scale(1) translate(-100px , 100px);
+    }
+
+}
+.CajaFuerte{
+    position: absolute;
+    width: 800px;
+    height: 820px;
+    top: 900px;
+    left: 95px;
+    border: 8px solid rgb(220, 110,184);
+    border-radius: 30px;
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+   
+}
+.boton{
+   
+    position: absolute;
+    width: 130px;
+    height: 90px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px ;
+    top: 1480px;
+    left: 440px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+#inputDisplay{
+    position: absolute;
+    width: 360px;
+    height: 80px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px;
+    top: 985px;
+    left: 320px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:  rgb(0,0,0,0.1);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+    color:  rgb(220, 110,184);
+}
+.enviar{
+    position: absolute;
+    width: 130px;
+    height: 90px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1480px;
+    left:590px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja{
+    position: absolute;
+    width: 130px;
+    height: 90px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1480px;
+    left: 290px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+    
+}
+.caja1{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1360px;
+    left: 290px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja2{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1360px;
+    left: 440px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja3{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1360px;
+    left: 590px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja4{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1230px;
+    left: 290px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja5{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1230px;
+    left: 440px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja6{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1230px;
+    left: 590px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja7{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1100px;
+    left: 290px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja8{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1100px;
+    left: 440px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+.caja9{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px;
+    top: 1100px;
+    left: 590px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
 }

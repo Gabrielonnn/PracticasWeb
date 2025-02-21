@@ -5,22 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carta Web</title>
         <link rel="stylesheet" href="Style.css">
-    
+       
+
 
     </head>
 
     <body>
-    
-        <header class="CajaFuerte">
-            
-            
-        </header>
 
-        <div class="Facha">
 
+        <div class="CajaFuerte"></div>
+        <div id="inputDisplay" class="respuesta"  >Password</div>
+        <div class="Corazon" ></div>
+        <div>
+            <button class="caja" type="button" onclick="agregarNumero('0')"  >0</button>
+            <button class="caja1" type="button" onclick="agregarNumero('1')" >1</button>
+            <button class="caja2" type="button" onclick="agregarNumero('2')" >2</button>
+            <button class="caja3" type="button" onclick="agregarNumero('3')" >3</button>
+            <button class="caja4" type="button" onclick="agregarNumero('4')" >4</button>
+            <button class="caja5" type="button" onclick="agregarNumero('5')" >5</button>
+            <button class="caja6" type="button" onclick="agregarNumero('6')" >6</button>
+            <button class="caja7" type="button" onclick="agregarNumero('7')" >7</button>
+            <button class="caja8" type="button" onclick="agregarNumero('8')" >8</button>
+            <button class="caja9" type="button" onclick="agregarNumero('9')" >9</button>
+            <button class="enviar" type="button"  onclick="verificarContrasena(inputDisplay)" >aceptar</button>
+            <button class="boton" onclick="limpiarInput()">Borrar</button>
+        
         </div>
 
-
+            <script src="Verifica.js"></script>
+            
     </body>
 
 </html>
