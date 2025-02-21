@@ -7,7 +7,7 @@ function agregarNumero(numero) {
 }
 
 function verificarContrasena() {
-    if(inputContraseña == "2020"){
+    if(inputContraseña == "2022"){
         alert("Contraseña correcta");
         window.location.href = "ruta.html";
     }else{
